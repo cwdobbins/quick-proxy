@@ -9,10 +9,10 @@ var rewritePath = `^${argv.path}`;
 var config = {
     target: argv.target,
     secure: argv.secure || true,
-    pathRewrite: { [rewritePath]: '' },
+    // pathRewrite: { [rewritePath]: '' },
     changeOrigin: true,
     logLevel: "debug"
 };
 
-app.use(argv.path, proxy(config));
+app.use('/', proxy(config));
 app.listen(argv.localPort);
