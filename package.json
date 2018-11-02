@@ -1,0 +1,24 @@
+{
+  "name": "quick-proxy",
+  "version": "1.0.0",
+  "description": "quick http/https proxy server",
+  "main": "quick-proxy.js",
+  "dependencies": {
+    "express": "^4.16.4",
+    "http-proxy-middleware": "^0.19.0",
+    "minimist": "^1.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node quick-proxy.js --"
+  },
+  "keywords": [
+    "node",
+    "http",
+    "https",
+    "proxy",
+    "server"
+  ],
+  "author": "Christopher Dobbins",
+  "license": "ISC"
+}
